@@ -41,5 +41,5 @@ class SquareImage:
             pad = [0, pad1, 0, pad2]
         else:
             pad = [pad1, 0, pad2, 0]
-        padder = v2.Pad(padding=pad, padding_mode='reflect')
+        padder = v2.Pad(padding=pad)
         return padder(img)
